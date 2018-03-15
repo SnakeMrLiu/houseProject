@@ -1,0 +1,17 @@
+server:
+  port: ${port:8080}
+spring:
+  mvc:
+    view:
+      suffix: .jsp
+      prefix: /WEB-INF/view/
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/work?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: admin
+
+  #thymeleaf:
+    #prefix: classpath:/templates/
+    #suffix: .html
+    #cache: false
