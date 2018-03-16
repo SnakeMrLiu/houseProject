@@ -1,8 +1,6 @@
 package com.lbw.controller.sellhouse;
 
-import com.lbw.pojo.sellhouse.Area;
-import com.lbw.pojo.sellhouse.Community;
-import com.lbw.pojo.sellhouse.SellHouseResource;
+import com.lbw.pojo.sellhouse.*;
 import com.lbw.service.sellhouse.SellHouseService;
 import com.lbw.utils.OssClienUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,6 +43,7 @@ public class SellHouseController {
         HashMap<String, Object> map = new HashMap<>();
         SellHouseResource sellHouseResource = sellHouseService.queryOneHouse(id);
         map.put("house",sellHouseResource);
+        map.put("houseId",id);
         mv.addAllObjects(map);
         return mv;
     }
@@ -100,8 +99,8 @@ public class SellHouseController {
     @RequestMapping(value = "queryHouse")
     @ResponseBody
     //接收前台传来的page和number带参继续传后台查询分页
-    public String queryHouse(Integer page, Integer number,HttpServletRequest request){
-        return  sellHouseService.queryHouse(page,number,request);
+    public String queryHouse(Integer page, Integer number,HttpServletRequest request,SellHouseResource houseResource){
+        return  sellHouseService.queryHouse(page,number,request,houseResource);
     }
 
     /**
@@ -150,6 +149,40 @@ public class SellHouseController {
     @ResponseBody
     public void deleteHouseOne(String id){
         sellHouseService.deleteHouseOne(id);
+    }
+    /**
+     * 查询房屋类型
+     */
+    @RequestMapping(value = "queryHouseType")
+    @ResponseBody
+    public List<HouseType>  queryHouseType(){
+        List<HouseType> list = sellHouseService.queryHouseType();
+        return list;
+    }
+    /**
+     * 查询装修程度
+     */
+    @RequestMapping(value = "queryDecorate")
+    @ResponseBody
+    public List<Decorate>  queryDecorate(){
+        List<Decorate> list = sellHouseService.queryDecorate();
+        return list;
+    }
+
+    /**
+     *  查询轮播图
+     */
+    @RequestMapping("slideshow")
+    @ResponseBody
+    public Map<String,Object> slideshow(Integer type,String sid){
+        Map<String,Object> map =  sellHouseService.slideshow(type,sid);
+        return map;
+    }
+
+    @RequestMapping(value = "slideshowCount")
+    @ResponseBody
+    public Map<String,Object> slideshowCount(String houseId){
+        return sellHouseService.slideshowCount(houseId);
     }
 
 

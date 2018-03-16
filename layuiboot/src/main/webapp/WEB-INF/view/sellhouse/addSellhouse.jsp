@@ -11,7 +11,7 @@
     <form class="layui-form" id="hoouseForm">
         <div class="layui-form-item">
             <label class="layui-form-label">标题</label>
-            <div class="layui-input-block">
+            <div class="layui-input-inline">
                 <input type="hidden" id="id" name="id">
                 <input type="text" class="layui-input" id="title" name="title">
             </div>
@@ -19,49 +19,49 @@
 
         <div class="layui-form-item">
             <label class="layui-form-label">售价</label>
-            <div class="layui-input-block">
+            <div class="layui-input-inline">
                 <input type="text" class="layui-input" id="price" name="price">
             </div>
         </div>
 
         <div class="layui-form-item">
             <label class="layui-form-label">室</label>
-            <div class="layui-input-block">
+            <div class="layui-input-inline">
                 <input type="text" class="layui-input" id="room" name="room">
             </div>
         </div>
 
         <div class="layui-form-item">
             <label class="layui-form-label">厅</label>
-            <div class="layui-input-block">
+            <div class="layui-input-inline">
                 <input type="text" class="layui-input" id="hall" name="hall">
             </div>
         </div>
 
         <div class="layui-form-item">
             <label class="layui-form-label">卫</label>
-            <div class="layui-input-block">
+            <div class="layui-input-inline">
                 <input type="text" class="layui-input" id="toilet" name="toilet">
             </div>
         </div>
 
         <div class="layui-form-item">
             <label class="layui-form-label">面积</label>
-            <div class="layui-input-block">
+            <div class="layui-input-inline">
                 <input type="text" class="layui-input" id="area" name="area">
             </div>
         </div>
 
         <div class="layui-form-item">
             <label class="layui-form-label">建造年代</label>
-            <div class="layui-input-block">
+            <div class="layui-input-inline">
                 <input type="text" id="buildingTime" class="layui-input"  name="buildingTime">
             </div>
         </div>
 
         <div class="layui-form-item">
             <label class="layui-form-label">小区名称</label>
-            <div class="layui-input-block">
+            <div class="layui-input-inline">
                 <select name="community" id="communityId">
 
                 </select>
@@ -84,7 +84,7 @@
         </div>
         <div class="layui-form-item">
             <label class="layui-form-label">房屋类型</label>
-            <div class="layui-input-block">
+            <div class="layui-input-inline">
                 <select name="roomType" id="roomType">
                     <option value="">请选择</option>
                     <option value="1">四合院</option>
@@ -98,21 +98,21 @@
 
         <div class="layui-form-item">
             <label class="layui-form-label">房屋方向</label>
-            <div class="layui-input-block">
+            <div class="layui-input-inline">
                 <input type="text" class="layui-input" id="roomDirection" name="roomDirection">
             </div>
         </div>
 
         <div class="layui-form-item">
             <label class="layui-form-label">所在楼层</label>
-            <div class="layui-input-block">
+            <div class="layui-input-inline">
                 <input type="text" class="layui-input" id="floor" name="floor">
             </div>
         </div>
 
         <div class="layui-form-item">
             <label class="layui-form-label">装修程度</label>
-            <div class="layui-input-block">
+            <div class="layui-input-inline">
                 <select name="decorate" id="decorate">
                     <option value=""></option>
                     <option value="1">毛坯</option>
@@ -125,42 +125,42 @@
 
         <div class="layui-form-item">
             <label class="layui-form-label">参考单价</label>
-            <div class="layui-input-block">
+            <div class="layui-input-inline">
                 <input type="text" class="layui-input" id="unitPrice" name="unitPrice">
             </div>
         </div>
 
         <div class="layui-form-item">
             <label class="layui-form-label">参考月供</label>
-            <div class="layui-input-block">
+            <div class="layui-input-inline">
                 <input type="text" class="layui-input" id="monthlyPayments" name="monthlyPayments">
             </div>
         </div>
 
         <div class="layui-form-item layui-form-text">
             <label class="layui-form-label">核心卖点</label>
-            <div class="layui-input-block">
+            <div class="layui-input-inline">
                 <textarea class="layui-textarea" runat="server" id="sellingPoint"  name="sellingPoint" style="border: 0; width: 99%;height: 90px"></textarea>
             </div>
         </div>
 
         <div class="layui-form-item layui-form-text">
             <label class="layui-form-label">业主心态</label>
-            <div class="layui-input-block">
+            <div class="layui-input-inline">
                 <textarea class="layui-textarea" runat="server" id="ownerMentality"  name="ownerMentality" style="border: 0; width: 99%;height: 90px"></textarea>
             </div>
         </div>
 
         <div class="layui-form-item layui-form-text">
             <label class="layui-form-label">小区配套</label>
-            <div class="layui-input-block">
+            <div class="layui-input-inline">
                 <textarea class="layui-textarea" runat="server" id="communityComplete"  name="communityComplete" style="border: 0; width: 99%;height: 90px"></textarea>
             </div>
         </div>
 
         <div class="layui-form-item layui-form-text">
             <label class="layui-form-label">服务介绍</label>
-            <div class="layui-input-block">
+            <div class="layui-input-inline">
                 <textarea class="layui-textarea" runat="server" id="serviceIntroduce"  name="serviceIntroduce" style="border: 0; width: 99%;height: 90px"></textarea>
             </div>
         </div>
@@ -193,7 +193,7 @@
             </button>
         </div>
     </form>
-    <button type="button" class="layui-btn" onclick="addHouse()"><i class="layui-icon">&#xe67c;</i>新增房源</button>
+    <center><button type="button" class="layui-btn" onclick="addHouse()"><i class="layui-icon">&#xe67c;</i>新增房源</button></center>
 <script>
     layui.use(['form', 'layedit', 'laydate','layedit',"upload"], function(){
         var $ = layui.jquery
@@ -247,10 +247,18 @@
         });
         layui.use('layedit', function(){
             layedit = layui.layedit;
-            indexs1 = layedit.build('sellingPoint'); //建立编辑器
-            indexs2 = layedit.build('ownerMentality'); //建立编辑器
-            indexs3 = layedit.build('communityComplete'); //建立编辑器
-            indexs4 = layedit.build('serviceIntroduce'); //建立编辑器
+            indexs1 = layedit.build('sellingPoint',{
+                height: 160,
+            }); //建立编辑器
+            indexs2 = layedit.build('ownerMentality',{
+                height: 160,
+            }); //建立编辑器
+            indexs3 = layedit.build('communityComplete',{
+                height: 160,
+            }); //建立编辑器
+            indexs4 = layedit.build('serviceIntroduce',{
+                height: 160,
+            }); //建立编辑器
         });
 
         //多图片上传
@@ -261,8 +269,8 @@
             ,done: function(res){
                 //上传完毕回调
                 $ = layui.jquery;
-                $("#photoDiv1").append('<input type="text" name="url" value="'+res.path+'">');
-                $("#photoDiv1").append('<input type="text" name="imgtype" value="1">');
+                $("#photoDiv1").append('<input type="hidden" name="url" value="'+res.path+'">');
+                $("#photoDiv1").append('<input type="hidden" name="imgtype" value="1">');
                 $('#imgdemo1').append('<img src="' + res.path + '" width="100px" height="100px" class="layui-upload-img">')
             }
         });
@@ -274,8 +282,8 @@
             ,done: function(res){
                 //上传完毕回调
                 $ = layui.jquery;
-                $("#photoDiv2").append('<input type="text" name="url" value="'+res.path+'">');
-                $("#photoDiv2").append('<input type="text" name="imgtype" value="2">');
+                $("#photoDiv2").append('<input type="hidden" name="url" value="'+res.path+'">');
+                $("#photoDiv2").append('<input type="hidden" name="imgtype" value="2">');
                 $('#imgdemo2').append('<img src="' + res.path + '" width="100px" height="100px" class="layui-upload-img">')
             }
         });
@@ -287,8 +295,8 @@
             ,done: function(res){
                 //上传完毕回调
                 $ = layui.jquery;
-                $("#photoDiv3").append('<input type="text" name="url" value="'+res.path+'">');
-                $("#photoDiv3").append('<input type="text" name="imgtype" value="3">');
+                $("#photoDiv3").append('<input type="hidden" name="url" value="'+res.path+'">');
+                $("#photoDiv3").append('<input type="hidden" name="imgtype" value="3">');
                 $('#imgdemo3').append('<img src="' + res.path + '" width="100px" height="100px" class="layui-upload-img">')
             }
         });
@@ -342,12 +350,50 @@
         success:function(data){
             var  province= '<option value="-1">请选择省</option>';
             $.each(data,function(){
+                if(this.id == 12){      //这里是选中省的
+                    province += '<option value="'+this.id+'" selected>'+this.name+'</option>'
+                }
                 province += '<option value="'+this.id+'">'+this.name+'</option>'
             })
             $("#province").html(province);
         }
     })
-
+    $.ajax({
+        url:"../sellhouse/queryArea",
+        type:"post",
+        data:{"pid":12},
+        dataType:"json",
+        async:false,
+        success:function(cityData){
+            var  province= '<option value="-1">请选择市</option>';
+            $.each(cityData,function(){
+                if(this.id == 1202){//这里是选中市的
+                    province += '<option value="'+this.id+'" selected>'+this.name+'</option>'
+                }
+                province += '<option value="'+this.id+'">'+this.name+'</option>'
+            })
+            $("#city").html(province);
+            //form.render('select');
+        }
+    })
+    $.ajax({
+        url:"../sellhouse/queryArea",
+        type:"post",
+        data:{"pid":1202},
+        dataType:"json",
+        async:false,
+        success:function(cityData){
+            var  province= '<option value="-1">请选择县</option>';
+            $.each(cityData,function(){
+                if(this.id == 120223){ //这里是选中县的
+                    province += '<option value="'+this.id+'" selected>'+this.name+'</option>'
+                }
+                province += '<option value="'+this.id+'">'+this.name+'</option>'
+            })
+            $("#county").html(province);
+            //form.render('select');
+        }
+    })
 </script>
 
 </body>
