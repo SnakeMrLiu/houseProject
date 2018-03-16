@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class TreeServiceImpl implements TreeService{
+public class TreeServiceImpl implements TreeService {
 
     @Autowired
     private TreeMapper treeMapper;

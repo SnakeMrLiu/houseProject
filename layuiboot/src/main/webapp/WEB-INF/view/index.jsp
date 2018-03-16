@@ -54,7 +54,7 @@
 <script>
     layui.use('layer', function(){
         var $ = layui.jquery, layer = layui.layer;
-        layer.open({
+/*        layer.open({
             type: 1
             ,title: false //不显示标题栏
             ,closeBtn: false
@@ -68,7 +68,7 @@
             ,success: function(layero){
 
             }
-        });
+        });*/
     });
     //打开新的选项卡
     var $;
